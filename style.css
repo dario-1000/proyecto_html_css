@@ -194,7 +194,13 @@ div#portafolio {
 }
 
 @media (max-width: 600px) {
-    .proyectos-grid {
+    div#portafolio {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 12px;
+    }
+
+    .proyectos {
         grid-template-columns: 1fr;
     }
 }
