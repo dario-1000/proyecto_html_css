@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portafolio personal de Darío Basanta Lorite">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="emoji.jpg" type="image/x-icon">
+        <title>Darío Basanta</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="frasecilla">Convierte tu página web en tu marca</h1>
+            <nav>
+                <div id="botones">
+                    <a href="#sobremi">Sobre mí</a>
+                    <a href="#portafolio">Portafolio</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div id="hero-contenido">
+                    <h1 id="nombre">Darío Basanta Lorite</h1>
+                    <p>Programador y diseñador web</p>
+                    <a href="#contacto-form">Disponible para trabajar</a>
+                </div>
+            </section>
+            <section>
+                <div id="sobremi">
+                    <h2>Sobre mí</h2>
+                    <p>Me llamo Darío Basanta Lorite, tengo 24 años y estudio la FP de DAM. Antes de decantarme por los ordenadores, me gradué en Estudios Ingleses, por lo que 
+                        dispongo de gran cantidad de fun facts sobre la lengua inglesa. Me apasionan la tecnología, la literatura, el cine de terror y los animales. Tengo tres
+                        gatos, Byron, Eris y Marie, a los que quiero más que a mí mismo.</p>
+                    <div class="gridgatos">
+                    <div class="fotobyron">
+                        <img src="byron.JPG">
+                    </div>
+                    <div class="fotoeris">
+                        <img src="eris.JPG">
+                    </div>
+                    <div class="fotomarie">
+                        <img src="marie.JPG">
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section>
+                <div id="portafolio">
+                    <h2>Mis proyectos</h2>
+                    <div class="proyectos">
+                         <div class="contenido">
+                            <img src="biblio.jpg">
+                            <h3>Bookly</h3>
+                            <p>Aplicación para gestionar una biblioteca personal.</p>
+                                <div class="tecnologias">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Java</span>
+                                </div>
+                        </div>
+                        <div class="contenido">
+                            <img src="sushi.jpg">
+                            <h3>Sakura Sushi</h3>
+                                <p>Página web de un restaurante japonés.</p>
+                                    <div class="tecnologias">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                        </div>
+                        <div class="contenido">
+                            <img src="tareas.jpg">
+                            <h3>TaskFlow</h3>
+                            <p>Organizador de tareas y actividades.</p>
+                                <div class="tecnologias">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                        </div>
+                        <div class="contenido">
+                            <img src="studio.jpg">
+                            <h3>Pixel Studio</h3>
+                            <p>Página web para crear portfolios personales.</p>
+                                <div class="tecnologias">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="contacto">
+                    <h2>Contacto</h2>
+                    <p>¿Quieres trabajar conmigo? ¡Escríbeme!</p>
+                    <form action="#" method="POST">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+            <hr />
+            <footer>
+                <small>© Darío Basanta Lorite · Máster Prometeo</small>
+            </footer>
+        </main>
+    </body>
+</html>

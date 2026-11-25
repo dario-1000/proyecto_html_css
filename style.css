@@ -1,0 +1,240 @@
+:root{
+    --color-fondo: #01487e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    margin: 0;
+}
+
+header{
+    border: 3px solid var(--color-fondo);
+    margin-left: 17em;
+    margin-right: 17em;
+    margin-top: 5em;
+    background-color:var(--color-fondo);
+}
+h1#frasecilla {
+    text-align: center;
+    font-weight:400;
+    color:#ffffff;
+    margin-bottom: 2em;
+}
+div#botones {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    border: 1px solid white;
+    padding: 5px
+}
+a:hover{
+    background-color: #a1afbb;
+}
+div#sobremi {
+    background-color: aliceblue;
+    border: 2px solid var(--color-fondo);
+    padding: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+    border-radius: 25px;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  
+  background-image: url('gato-negro-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1#nombre {
+    font-size: clamp(32px, 8vw, 70px);
+}
+
+#hero-contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    div#sobremi {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 2em;
+    }
+    div#sobremi {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 15px;
+    }
+    .hero {
+        aspect-ratio: 4 / 3; 
+    }
+}
+
+.gridgatos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 2em 5em;
+}
+
+.gridgatos > div {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.gridgatos img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .gridgatos {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .gridgatos {
+        margin-left: 1em;
+        margin-right: 1em;
+        gap: 0.5em;
+    }
+}
+
+div#portafolio {
+    background-color: aliceblue;
+    border: 2px solid var(--color-fondo);
+    padding: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+    border-radius: 25px;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.proyectos > div {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.proyectos > div:hover {
+    transform: translateY(-5px);
+}
+
+.proyectos img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.contenido h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: var(--color-fondo);
+}
+
+.contenido p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.tecnologias {
+    color: gray;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+div#contacto {
+    background-color: aliceblue;
+    border: 2px solid var(--color-fondo);
+    padding: 20px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+    border-radius: 25px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contacto input, #contacto textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#contacto button{
+    margin-top: 10px;
+    padding: 12px;
+    background-color: var(--color-fondo);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#contacto button:hover {
+    background-color: #101e4b;
+}
+
+footer {
+    color: rgb(187, 198, 199);
+    text-align: center;
+}
